@@ -31,7 +31,6 @@
 
 //https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=218&No=1021
 
-
 module DE10_Lite(
 
       ///////// Clocks /////////
@@ -112,7 +111,6 @@ wire command_ready;
 assign command_startofpacket = 1'b1; // // ignore in altera_adc_control core
 assign command_endofpacket = 1'b1; // ignore in altera_adc_control core
 assign command_valid = 1'b1; // 
-//assign command_channel = SW[2:0]+1; // SW2/SW1/SW0 down: map to arduino ADC_IN0
 assign command_channel = 1;
 
 ////////////////////////////////////////////
